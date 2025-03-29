@@ -1,0 +1,21 @@
+[project]
+name = "jaxwing"
+version = "0.1.0"
+description = "Minimalist flight simulator built with JAX and custom ray tracing"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jax",
+    "jaxlib",
+    "numpy",
+    "pygame",
+    "tqdm>=4.67.1",
+    "opencv-python",
+]
+
+[project.scripts]
+jaxwing = "jaxwing.main:run_simulation"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
